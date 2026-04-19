@@ -36,7 +36,6 @@ COPY --chown=churnguard:churnguard alembic/ ./alembic/
 COPY --chown=churnguard:churnguard alembic.ini ./
 COPY --chown=churnguard:churnguard pyproject.toml ./
 COPY --chown=churnguard:churnguard tests/ ./tests/
-COPY --chown=churnguard:churnguard data/ ./data/
 
 RUN mkdir -p /tmp/churnguard/uploads app/ml/artifacts \
     && chown -R churnguard:churnguard /tmp/churnguard app/ml/artifacts
