@@ -1,0 +1,63 @@
+# ── API ────────────────────────────────────────────────────────────────────────
+fastapi==0.115.4
+uvicorn[standard]==0.32.1
+python-multipart==0.0.17
+
+# ── Database ───────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+psycopg2-binary==2.9.10
+
+# ── Auth & Security ────────────────────────────────────────────────────────────
+python-jose[cryptography]==3.3.0
+passlib[argon2]==1.7.4
+argon2-cffi==23.1.0
+
+# ── Validation ─────────────────────────────────────────────────────────────────
+pydantic[email]==2.10.3
+pydantic-settings==2.6.1
+
+# ── Cache & Queue ──────────────────────────────────────────────────────────────
+redis==5.2.1
+celery==5.4.0
+flower==2.0.1
+
+# ── ML ─────────────────────────────────────────────────────────────────────────
+scikit-learn==1.5.2
+pandas==2.2.3
+numpy==1.26.4
+joblib==1.4.2
+
+# ── Phase 4: Drift detection ───────────────────────────────────────────────────
+scipy==1.14.1
+
+# ── Phase 6: SHAP explainability ──────────────────────────────────────────────
+shap==0.46.0
+
+# ── Rate Limiting ──────────────────────────────────────────────────────────────
+slowapi==0.1.9
+
+# ── Observability: Phase 3 ─────────────────────────────────────────────────────
+structlog==24.4.0
+prometheus-client==0.21.1
+opentelemetry-sdk==1.28.2
+opentelemetry-instrumentation-fastapi==0.49b2
+opentelemetry-instrumentation-sqlalchemy==0.49b2
+
+# ── HTTP client (used in train.py) ─────────────────────────────────────────────
+requests==2.32.3
+
+# ── Testing ────────────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.24.0
+pytest-cov==6.0.0
+httpx==0.28.0
+factory-boy==3.3.1
+faker==33.1.0
+
+# ── Dev tools ──────────────────────────────────────────────────────────────────
+ruff==0.8.3
+mypy==1.13.0
+pre-commit==4.0.1
+detect-secrets==1.5.0

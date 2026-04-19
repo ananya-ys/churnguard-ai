@@ -1,0 +1,61 @@
+# ── Secrets (NEVER commit) ───────────────────────────────────────────────────
+.env
+*.env
+secrets/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ── Virtual envs ─────────────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── ML Artifacts (large binary files — use git-lfs or exclude) ───────────────
+app/ml/artifacts/*.pkl
+app/ml/artifacts/*.joblib
+data/
+
+# ── Testing / Coverage ───────────────────────────────────────────────────────
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+coverage.xml
+*.xml
+
+# ── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+
+# ── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.Zone.Identifier
+
+# ── Docker volumes (local) ───────────────────────────────────────────────────
+postgres_data/
+
+# ── Celery ───────────────────────────────────────────────────────────────────
+celerybeat-schedule
+celerybeat.pid
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Upload temp ──────────────────────────────────────────────────────────────
+uploads/
+/tmp/
